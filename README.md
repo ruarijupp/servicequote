@@ -1,3 +1,50 @@
+# ServiceQuote
+
+A Laravel-based quote + payment simulation app, built to demonstrate backend skills in a real-world service business flow.
+
+## 🧠 What It Does
+
+- Visitors can submit service quote requests
+- Logged-in users can view submissions in a dashboard
+- Each quote has a “Pay Now” flow that mimics Stripe-style UX
+- Payment confirmation updates status and timestamps the record
+
+## 💡 Why I Built This
+
+To showcase backend ability beyond CRUD:
+- Form validation and storage
+- Auth-protected dashboards
+- Simulated payment logic
+- Status management + conditional UI
+- Clean routes, Blade views, and migrations
+
+## 🛠 Stack
+
+- Laravel 12 (PHP 8)
+- Blade Templates
+- SQLite (local dev)
+- TailwindCSS (UI)
+- Auth scaffolding via Laravel Breeze
+
+## ✅ Features
+
+- User registration + login
+- Quote submission form
+- Admin-style dashboard view
+- Fake payment gateway (Stripe-inspired)
+- Payment status & flash messages
+
+## 🚀 Running Locally
+
+```bash
+git clone https://github.com/ruarijupp/servicequote.git
+cd servicequote
+composer install
+cp .env.example .env
+php artisan key:generate
+touch database/database.sqlite
+php artisan migrate
+php artisan serve
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
